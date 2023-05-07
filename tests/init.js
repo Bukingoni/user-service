@@ -7,10 +7,13 @@ const EntityFactory = require('@entityFactory');
 before(function (done) {
     this.timeout(7000);
     EntityFactory.init().then(() => {
+        console.log('then() in entity factory init')
         setTimeout(() => {
+            console.log('setTimeout() in entity factory init')
             done();
         }, 5000);
     });
+    console.log('end of before()')
 });
 
 
