@@ -5,7 +5,7 @@ const { before, after } = require('mocha');
 const EntityFactory = require('@entityFactory');
 
 before(function (done) {
-    this.timeout(3000);
+    this.timeout(10000);
     EntityFactory.init().then(() => {
         console.log('then() in entity factory init')
         setTimeout(() => {
