@@ -1,0 +1,52 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bukingoni/user-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bukingoni/user-service/issues"
+  },
+  "homepage": "https://github.com/Bukingoni/user-service#readme",
+  "_moduleAliases": {
+    "@root": ".",
+    "@config": "./config",
+    "@logger": "./bukingoni-submodules/utils/logger.js",
+    "@entityFactory": "./bukingoni-submodules/entityFactory",
+    "@utils": "./bukingoni-submodules/utils",
+    "@services": "./bukingoni-submodules/services",
+    "@response": "./bukingoni-submodules/utils/response.js",
+    "@AuthorizationSession": "./bukingoni-submodules/middlewares/authorization.middleware.js",
+    "@constants": "./bukingoni-submodules/constants",
+    "@PermissionMiddleware": "./bukingoni-submodules/middlewares/permission.middleware.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-useragent": "^1.0.15",
+    "formidable": "^2.1.1",
+    "helmet": "^6.1.5",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "log4js": "^6.9.1",
+    "mariadb": "^3.1.2",
+    "module-alias": "^2.2.2",
+    "sequelize": "^6.31.1",
+    "util": "^0.12.5",
+    "uuid": "^9.0.0"
+  }
+}
