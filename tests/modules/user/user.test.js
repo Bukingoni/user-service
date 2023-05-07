@@ -30,7 +30,7 @@ describe('User test ', function () {
   });
 
   this.afterAll(async () => {
-    console.log('afterAll');
+    console.log('afterAll inside tests');
   });
 
   it('Should return true for tests', async function () {
