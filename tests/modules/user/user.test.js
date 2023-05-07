@@ -23,7 +23,7 @@ const next = (error) => {
   return error;
 };
 
-describe('User test', function () {
+describe('User test ', function () {
   this.beforeEach(async () => {
     errorCounter = 0;
     await init();
