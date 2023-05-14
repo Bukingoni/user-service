@@ -23,5 +23,5 @@ module.exports = {
         port: process.env.DATABASE_PORT ?? 3306,
         dialect: process.env.DATABASE_DIALECT ?? 'mariadb',
         forceSync: process.env.DATABASE_FORCE_SYNC === 'true'
-    },
+    }, 
 };
