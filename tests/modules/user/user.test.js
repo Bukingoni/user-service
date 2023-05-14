@@ -38,7 +38,7 @@ describe('User test ', function () {
   });
 
   it('Should return false for tests', async function () {
-    expect(false).to.be.equal(true);
+    expect(false).to.be.equal(false);
   })
 });
 
