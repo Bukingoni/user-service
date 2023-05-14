@@ -1,39 +1,23 @@
 {
-    "compilerOptions": {
-        "moduleResolution": "node",
-        "target": "es6",
-        "baseUrl": ".",
-        "paths": {
-            "@config": [
-                "./config/index.js"
-            ],
-            "@logger": [
-                "./bukingoni-submodules/utils/logger.js"
-            ],
-            "@entityFactory": [
-                "./bukingoni-submodules/entityFactory/index.js"
-            ],
-            "@utils/*": [
-                "./bukingoni-submodules/utils/*"
-            ],
-            "@services": [
-                "./bukingoni-submodules/services/index.js"
-            ],
-            "@response": [
-                "./bukingoni-submodules/utils/response.js"
-            ],
-            "@AuthorizationSession": [
-                "./bukingoni-submodules/middlewares/authorization.middleware.js"
-            ],
-            "@constants": [
-                "./bukingoni-submodules/constants/index.js"
-            ],
-            "@PermissionMiddleware": [
-                "./bukingoni-submodules/middlewares/permission.middleware.js"
-            ]
-        }
-    },
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es6",
+    "baseUrl": ".",
+    "paths": {
+      "@config": ["./config/index.js"],
+      "@logger": ["./bukingoni-submodules/utils/logger.js"],
+      "@entityFactory": ["./bukingoni-submodules/entityFactory/index.js"],
+      "@utils/*": ["./bukingoni-submodules/utils/*"],
+      "@services": ["./bukingoni-submodules/services/index.js"],
+      "@response": ["./bukingoni-submodules/utils/response.js"],
+      "@AuthorizationSession": [
+        "./bukingoni-submodules/middlewares/authorization.middleware.js"
+      ],
+      "@constants": ["./bukingoni-submodules/constants/index.js"],
+      "@PermissionMiddleware": [
+        "./bukingoni-submodules/middlewares/permission.middleware.js"
+      ]
+    }
+  },
+  "exclude": ["node_modules"]
 }
