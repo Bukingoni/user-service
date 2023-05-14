@@ -1,11 +1,11 @@
-require('module-alias/register');
-require('dotenv').config({ path: `${process.cwd()}/.env-test` });
+require("module-alias/register");
+require("dotenv").config({ path: `${process.cwd()}/.env-test` });
 
-const { describe, it } = require('mocha');
-const expect = require('expect.js');
-const crypto = require('crypto');
+const { describe, it } = require("mocha");
+const expect = require("expect.js");
+const crypto = require("crypto");
 
-const EntityFactory = require('@entityFactory');
+const EntityFactory = require("@entityFactory");
 
 let errorCounter = 0;
 
@@ -23,25 +23,31 @@ const next = (error) => {
   return error;
 };
 
-describe('User test ', function () {
+describe("User test", function () {
   this.beforeEach(async () => {
     errorCounter = 0;
+  });
+
+  this.beforeAll(async () => {
     await init();
   });
 
   this.afterAll(async () => {
-    console.log('afterAll inside tests');
+    await EntityFactory.emptyDatabase();
   });
 
-  it('Should return true for tests', async function () {
+  it("Should return true for tests", async function () {
     expect(true).to.be.equal(true);
   });
 
-  it('Should return false for tests', async function () {
+  it("Should return false for tests", async function () {
     expect(false).to.be.equal(false);
-  })
+  });
 });
 
 const init = async () => {
-    console.log('init');
-}
+  const User = await EntityFactory.getEntity("User");
+  const user = await User.create({
+    FirstName: "John",
+  });
+};
