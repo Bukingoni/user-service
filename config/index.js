@@ -6,7 +6,7 @@ module.exports = {
         printToFile: process.env.LOGGER_PRINT_TO_FILE === 'true',
         consoleJson: process.env.LOGGER_CONSOLE_FORMAT_JSON === 'true'
     },
-    server: {
+    server: { 
         host: process.env.SERVER_HOST ?? 'localhost',
         port: process.env.SERVER_PORT ?? '3000',
         tokenSecret: process.env.SERVER_TOKEN_SECRET ?? 'secret',
